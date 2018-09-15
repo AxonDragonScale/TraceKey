@@ -63,6 +63,13 @@ namespace Helper {
         s<<e;   // type T must support the '<<' operator
         return s.str();
     }
+
+    // function that writes into a log file - "AppLog.txt" for debugging purposes
+    void writeAppLog(const std::string &s) {
+        std::ofstream file("AppLog.txt", std::ios::app);
+        file<<"["<<Helper::DateTime().getDateTimeString()<<"]"<<"\n"<<s<<"\n"<<std::endl;
+        file.close();
+    }
 }
 
 #endif // HELPER_H
