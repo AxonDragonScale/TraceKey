@@ -4,6 +4,7 @@
 #include <string>
 #include <ctime>
 #include <sstream>
+#include <fstream>
 
 namespace Helper {
 
@@ -17,8 +18,8 @@ namespace Helper {
             time_t rawTime;
             struct tm *timeInfo;    // http://www.cplusplus.com/reference/ctime/tm/
 
-            time(rawTime);  // get curretn time in rawTime
-            timeInfo = localtime(rawTime);  // http://www.cplusplus.com/reference/ctime/localtime/
+            time(&rawTime);  // get curretn time in rawTime
+            timeInfo = localtime(&rawTime);  // http://www.cplusplus.com/reference/ctime/localtime/
 
             day = timeInfo->tm_mday;
             month = timeInfo->tm_mon;
@@ -41,7 +42,7 @@ namespace Helper {
         }
 
         std::string getDateString(const std::string sep = ".") const {
-            return  std::string( day<10 ? "0" : "") + toString(day) + sep
+            return  std::string( day<10 ? "0" : "") + toString(day) + sep +
                     std::string( month<10 ? "0" : "") + toString(month) + sep +
                     toString(year);
         }

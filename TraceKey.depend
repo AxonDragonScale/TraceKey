@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1537093262 source:e:\projects\tracekey\main.cpp
+	<iostream>
+	<windows.h>
+	"Helper.h"
+	"KeyConstants.h"
+	"base64.h"
+
+1537093335 e:\projects\tracekey\helper.h
+	<string>
+	<ctime>
+	<sstream>
+	<fstream>
+
+1537097228 e:\projects\tracekey\keyconstants.h
+	<map>
+	<string>
+
+1537095678 e:\projects\tracekey\base64.h
+	<string>
+	<vector>
+
