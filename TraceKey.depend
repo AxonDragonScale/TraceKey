@@ -1,10 +1,12 @@
 # depslib dependency file v1.0
-1537093262 source:e:\projects\tracekey\main.cpp
+1537275805 source:e:\projects\tracekey\main.cpp
 	<iostream>
 	<windows.h>
 	"Helper.h"
 	"KeyConstants.h"
 	"base64.h"
+	"IO.h"
+	"Timer.h"
 
 1537093335 e:\projects\tracekey\helper.h
 	<string>
@@ -12,11 +14,23 @@
 	<sstream>
 	<fstream>
 
-1537097228 e:\projects\tracekey\keyconstants.h
+1537098245 e:\projects\tracekey\keyconstants.h
 	<map>
 	<string>
 
 1537095678 e:\projects\tracekey\base64.h
 	<string>
 	<vector>
+
+1537276402 e:\projects\tracekey\io.h
+	<string>
+	<cstdlib>
+	<fstream>
+	<windows.h>
+	"Helper.h"
+	"base64.h"
+
+1537276137 e:\projects\tracekey\timer.h
+	<thread>
+	<chrono>
 

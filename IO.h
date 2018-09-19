@@ -23,7 +23,7 @@ namespace IO {
     // takes a path as input and creates any subdirectory that does not exist
     bool makeDir(std::string path) {
         for(char &c : path) {
-            if(c = '\\') {
+            if(c == '\\') {
                 c = '\0';   // so that we create the subdirectory only till that \\ if it doesn't exist.
                 if(makeDirUtil(path) == false) {
                     return false;
@@ -45,14 +45,14 @@ namespace IO {
 
         try {
             std::ofstream fileStream(path + fileName);    // creates fileName if does not exist, just opens in append mode otherwise
-            if(!file) return "";
+            if(!fileStream) return "";
 
             std::ostringstream strStream;
             strStream<<"["<<dt.getDateTimeString()<<"]"<<std::endl<<t<<std::endl;
-            std:string data = Base64::encryptB64(s.str());
+            std::string data = Base64::encryptB64(strStream.str());
             fileStream<<data;
 
-            if(!file) return "";
+            if(!fileStream) return "";
             fileStream.close();
             return fileName;
         } catch(...) {
