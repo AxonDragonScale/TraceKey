@@ -65,7 +65,7 @@ public:
         timerThread.join();
     }
 
-    void setFunc(std::function<void(void)> &f) {
+    void setFunc(const std::function<void(void)> &f) {
         func = f;
     }
 

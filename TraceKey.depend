@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1537275805 source:e:\projects\tracekey\main.cpp
+1537371366 source:e:\projects\tracekey\main.cpp
 	<iostream>
 	<windows.h>
 	"Helper.h"
@@ -7,6 +7,7 @@
 	"base64.h"
 	"IO.h"
 	"Timer.h"
+	"SendMail.h"
 
 1537093335 e:\projects\tracekey\helper.h
 	<string>
@@ -30,7 +31,15 @@
 	"Helper.h"
 	"base64.h"
 
-1537276137 e:\projects\tracekey\timer.h
+1537372168 e:\projects\tracekey\timer.h
 	<thread>
 	<chrono>
+
+1537372078 e:\projects\tracekey\sendmail.h
+	<fstream>
+	<vector>
+	<windows.h>
+	"Timer.h"
+	"Helper.h"
+	"IO.h"
 
