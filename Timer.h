@@ -66,6 +66,7 @@ public:
     }
 
     void setFunc(const std::function<void(void)> &f) {
+        // needs to be const coz, std::function doesnt have a non-const copy constructor
         func = f;
     }
 
