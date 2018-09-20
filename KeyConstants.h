@@ -200,7 +200,7 @@ public:
                                     {0xA5, {"[VK_RMENU]", "[Right Alt]"}},
                                     {0xA1, {"[VK_RSHIFT]", "[Right Shift]"}},
                                     {0x5C, {"[VK_RWIN]", "[Right Win]"}},
-                                    {0x91, {"[VK_SCROLL]", "[Scrol Lock]"}},
+                                    {0x91, {"[VK_SCROLL]", "[Scroll Lock]"}},
                                     {0x5F, {"[VK_SLEEP]", "[Sleep]"}},
                                     {0x2C, {"[VK_SNAPSHOT]", "[Print Screen]"}},
                                     {0x26, {"[VK_UP]", "[Arrow Up]"}},

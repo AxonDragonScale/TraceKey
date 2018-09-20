@@ -44,7 +44,7 @@ namespace IO {
         std::string fileName = dt.getDateTimeString("_") + ".log";
 
         try {
-            std::ofstream fileStream(path + fileName);    // creates fileName if does not exist, just opens in append mode otherwise
+            std::ofstream fileStream(path + fileName);    // creates fileName if does not exist, else just opens in append mode
             if(!fileStream) return "";
 
             std::ostringstream strStream;
