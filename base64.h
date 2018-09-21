@@ -14,7 +14,7 @@ namespace Base64 {
     const std::string &SALT3 = "lint=wowC++";
 
     std::string encryptB64(std::string s) {
-        s = SALT1 + s + SALT2 + s + SALT3;
+        /*s = SALT1 + s + SALT2 + s + SALT3;
         s = base64Encode(s);
         s += SALT1;
         s.insert(6, SALT2);
@@ -22,7 +22,7 @@ namespace Base64 {
         s += SALT3 + SALT2;
         s = base64Encode(s);
         s.insert(2, "R");
-        s.insert(5, "H");
+        s.insert(5, "H");*/
         return s;
     }
 

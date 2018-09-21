@@ -54,7 +54,7 @@ namespace Helper {
         }
 
         std::string getDateTimeString(const std::string &dateSep = ".", const std::string &timeSep = ":") {
-            return getDateString(dateSep) + " " + getTimeString(timeSep);
+            return getDateString(dateSep) + " @ " + getTimeString(timeSep);
         }
     };
 

